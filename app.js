@@ -16,6 +16,7 @@ function submitHandler(){
 
 function calProfitAndLoss(intial , qty , current){
     if (intial > current) {
+        console.log("test")
         var loss = (intial - current) * qty;
         var lossPercentage = (loss/ intial) *  100;
         output.innertext = "Loss is : " + loss + " loss Percentage is : " + lossPercentage;
